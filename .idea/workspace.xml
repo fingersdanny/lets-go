@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1728668b-8205-443c-8262-0482f03b59f6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/hello.go" beforeDir="false" afterPath="$PROJECT_DIR$/main/hello.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/greetings/greetings.go" beforeDir="false" afterPath="$PROJECT_DIR$/greetings/greetings.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/hello.go" beforeDir="false" afterPath="$PROJECT_DIR$/hello/hello.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +42,7 @@
     "DefaultGoTemplateProperty": "Go File",
     "Go Build.go build awesomeProject/hello.executor": "Run",
     "Go Build.go build awesomeProject/main.executor": "Run",
+    "Go Build.go build hello.go (1).executor": "Run",
     "Go Build.go build hello.go.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -84,6 +86,15 @@
       <filePath value="$PROJECT_DIR$/greetings/greetings.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build hello.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="awesomeProject" />
+      <working_directory value="$PROJECT_DIR$/hello" />
+      <kind value="FILE" />
+      <package value="awesomeProject" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/hello/hello.go" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build hello.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="awesomeProject" />
       <working_directory value="$PROJECT_DIR$" />
@@ -96,6 +107,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build awesomeProject/hello" />
+        <item itemvalue="Go Build.go build hello.go (1)" />
         <item itemvalue="Go Build.go build greetings.go" />
         <item itemvalue="Go Build.go build hello.go" />
         <item itemvalue="Go Build.go build awesomeProject/main" />
