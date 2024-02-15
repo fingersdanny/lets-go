@@ -6,16 +6,30 @@ import (
 	"math/rand"
 )
 
-// Hello returns a greeting for the named person.
+// Hello 메서드는 입력으로 받는 사람에 대한 환영 메시지를 반환합니다.
 func Hello(name string) (string, error) {
-	// 아무 이름도 안들어온다면, 메시지와 에러를 반환한당~
+	// 아무 이름도 안들어온다면, 메시지와 에러를 반환합니다.
 	if name == "" {
-		return "", errors.New("empty name")
+		return name, errors.New("empty name")
 	}
 
-	// 이름이 들어온다면, 이름을 담고 있는 값을 환영 메시지에 담아서 반환한당.
+	// 이름이 들어온다면, 이름을 담고 있는 값을 환영 메시지에 담아서 반환합니다.
 	message := fmt.Sprintf(randomFormat(), name)
 	return message, nil
+}
+
+func Hellos(names []string) (map[string]string, error) {
+	messages := make(map[string]string)
+	// 반복문을 통해, 각 이름을 Hello 함수에 넣어서 반환 값인 메시지를 가져온다.
+	for _, name := range names {
+		message, err := Hello(name)
+		if err != nil {
+			return nil, err
+		}
+		// 이름을 key로 메시지를 value로 맵에 저장한다.
+		messages[name] = message
+	}
+	return messages, nil
 }
 
 // randomFormat 함수는 환영 인사 메시지 세트 중 하나를 반환합니다.
