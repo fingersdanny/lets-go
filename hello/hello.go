@@ -1,9 +1,10 @@
 package main
 
 import (
-	"awesomeProject/greetings"
 	"fmt"
 	"log"
+
+	"awesomeProject/greetings"
 )
 
 func main() {
@@ -16,7 +17,7 @@ func main() {
 	log.SetFlags(0)
 
 	// 환영 메시지를 요청한다.
-	message, err := greetings.Hello("")
+	message, err := greetings.Hello("hodako")
 	// 예외가 발생하면, 콘솔에 출력하고 프로그램을 종료한다.
 	if err != nil {
 		log.Fatal(err)
